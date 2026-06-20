@@ -2,7 +2,7 @@ from ray import serve
 import socket
 import os
 
-@serve.deployment(num_replicas=3)
+@serve.deployment(num_replicas=2)
 class Hello:
     def __init__(self):
         # 缓存主机名，避免每次请求都调用系统函数
