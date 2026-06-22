@@ -11,6 +11,6 @@ class Hello:
         self.pod_ip = os.environ.get("MY_POD_IP", "unknown")
 
     def __call__(self):
-        return f"hello rayserve:v1, running on host: {self.hostname}, pod_ip: {self.pod_ip}"
+        return f"hello rayserve:v2, running on host: {self.hostname}, pod_ip: {self.pod_ip}"
 
 deployment_graph = Hello.bind()
